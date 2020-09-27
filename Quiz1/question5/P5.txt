@@ -1,0 +1,4 @@
+﻿Problem 5
+
+Choosing 16-bit mode and 64-bit mode is dependent on the kind of program one has to run, as 16-bit mode’s main advantage is the low latency of memory access and memory storage as in the 16-bit mode there is maximum of 1MB of Ram allocated to the program. If the program is not requiring any 64-bit instruction, we can use both 64 bit mode or the 16-bit mode. But if the program is using 64-bit or 32 bit instruction we would have to run it in the protected mode.
+My claim is furthermore supported by the fact htat when the system boots up it runs programs in the 16bit mode, till the time the kernel loads up. After kernel loads the programs run in the 32or 64 bit mode(protected mode)
