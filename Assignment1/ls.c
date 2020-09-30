@@ -5,7 +5,7 @@
 #include<unistd.h>
 int main(int argc, char **argv){
     struct dirent **files;
-    int n,type=0,dirChanged=0;
+    int n,type=0;
     if(argc==1){
         n = scandir(".", &files , 0, alphasort);
             if (n < 0)
@@ -20,9 +20,6 @@ int main(int argc, char **argv){
                     i++;
                 }
                 free(files);
-                if(dirChanged==1){
-                    chdir("..");
-                }
                 
             }
     }
@@ -77,11 +74,7 @@ int main(int argc, char **argv){
                         free(files[i]);
                         i++;
                     }
-                    free(files);
-                    if(dirChanged==1){
-                        chdir("..");
-                    }
-                    
+                    free(files);                    
                 }
         }
         else{

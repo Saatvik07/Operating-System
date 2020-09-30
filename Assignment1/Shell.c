@@ -158,6 +158,23 @@
                     }
                 
             }
+            else if (strcmp(command,"mkdir")==0){
+                    pid_t pid = fork();
+                    if(pid==0){
+                        if(flag!=NULL){
+                                char *args[] = {"mkdirSelf",flag,arguments[0],arguments[1],NULL};
+                                execvp(args[0],args);
+                        }
+                        else{
+                            char *args[] = {"mkdirSelf",arguments[0],NULL};
+                            execvp(args[0],args);
+                        }
+                    }
+                    else if (pid>0){
+                        wait(pid,0);
+                    }
+                
+            }
             else if (strcmp(command,"exit")==0){
                 break;
             }

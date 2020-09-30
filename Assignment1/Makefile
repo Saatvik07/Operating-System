@@ -19,9 +19,14 @@ compileRemove:
 	gcc -o rmSelf rm.c
 	sudo mv rmSelf ../../../../usr/bin
 
+compileMakeDir:
+	gcc -o mkdirSelf mkdir.c
+	sudo mv mkdirSelf ../../../../usr/bin
+
 compileAll:
 	make compileLs
 	make compileCat
 	make compileDate
 	make compileRemove
+	make compileMakeDir
 	make compileShell

@@ -548,3 +548,52 @@ rm -i -v -d sub
 exit
 rm -i -v -d sub
 exit
+mkdir moe
+rm -i moe
+mkdir lster/first
+exit
+mkdir saatvik
+mkdir saatvik/gg/wp
+mkdir -p saatvik/gg/wp
+mkdir -v saatvik/gg
+mkdir a
+mkdir -v a/b/c
+mkdir -v a/b
+mkdir -p a/c
+exit
+mkdir -p saatvik/gg
+exit
+mkdir -p saatvik/gg
+exit
+mkdir -p saatvik/gg
+exit
+mkdir -p saatvik/gg/wp
+exit
+mkdir -p saatvik/gg/wp/lol
+exit
+mkdir -p saatvik/gg
+exit
+mkdir -p saatvik,gg,wp
+exit
+mkdir -p saatvik/gg
+exit
+mkdir -p saatvik/gg/wp
+exit
+mkdir -p saatvik
+exit
+mkdir -p saatvik/gg/wp
+exit
+mkdir -p saatvik/gg/wp
+exit
+mkdir -p saatvik/gg
+exit
+mkdir -p saatvik/gg/wp
+exit
+mkdir -p saatvik/gg
+pwd
+mkdir -p -v d/e/f/h
+rm -v
+exit
+rm -d -v
+mkdir -p -v d/e/f/g
+exit
