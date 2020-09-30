@@ -78,7 +78,8 @@ int main() {
     } 
     else {
         printf("Beggining the parent process\n");
-        waitpid(pid,0);
+        int wstatus;
+        waitpid(pid,&wstatus,0);
         FILE *filePointer ; 
         char buffer1[65365];
         char dataToBeRead; 
