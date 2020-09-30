@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
+#include<fcntl.h>
 int main() {
     pid_t pid = fork();
     if (pid < 0) {
@@ -12,23 +13,24 @@ int main() {
     else if (pid == 0) {
         printf("Beginning child process\n");
         FILE *filePointer ; 
-        char buffer[256];
+        char buffer[65365];
         char dataToBeRead; 
         char section;
-        int id;
+        int id,fileDesc;
+        int count=0;
         int x1,x2,x3,x4,x5;
-        filePointer = fopen("Test.csv", "r") ; 
-        if ( filePointer == NULL ) 
+        fileDesc = open("Test.csv", O_RDONLY) ; 
+        if (fileDesc==-1 ) 
         { 
-            printf( "Test.c file failed to open." ) ; 
+            printf( "Test.csv file failed to open." ) ; 
         } 
         else
         { 
             int count=0;
-            while(fgets(buffer,255,filePointer) != NULL) 
+            while(read(fileDesc,buffer,sizeof(buffer)) != 0) 
             {
                 char *token;
-                token = strtok(buffer,",");
+                token = strtok(buffer,",\n");
                 while(token!=NULL){
                     if(count>=6){
                         if(count%6==0){
@@ -59,18 +61,18 @@ int main() {
                                 x4 = atoi(token);
                                 printf("A4: %d ",x4);
                                 printf("Average: %f",(float)(x1+x2+x3+x4)/4);
+                                printf("\n");
                             } 
                         }
                     }
-                    token = strtok(NULL,",");  
+                    token = strtok(NULL,",\n");  
                     count++;                                                                                                                                                                                                                                                                                            
                 }
-                if(section=='A')
-                printf("\n");
+                
             }
-            fclose(filePointer) ;     
+            close(fileDesc) ;     
         }
-        
+
         printf("\n\n\nCompleted the child process\n\n\n");
         exit(0);
     } 
@@ -81,20 +83,20 @@ int main() {
         char buffer[256];
         char dataToBeRead; 
         char section;
-        int id;
+        int id,fileDesc;
         int x1,x2,x3,x4,x5;
-        filePointer = fopen("Test.csv", "r") ; 
+        fileDesc = open("Test.csv", O_RDONLY) ; 
         if ( filePointer == NULL ) 
         { 
             printf( "Test.c file failed to open." ) ; 
         } 
-        else
+                else
         { 
             int count=0;
-            while(fgets(buffer,255,filePointer) != NULL) 
+            while(read(fileDesc,buffer,sizeof(buffer)) != 0) 
             {
                 char *token;
-                token = strtok(buffer,",");
+                token = strtok(buffer,",\n");
                 while(token!=NULL){
                     if(count>=6){
                         if(count%6==0){
@@ -109,7 +111,7 @@ int main() {
                             
                         }
                         else if(section=='B'){
-                            if (count%6==2 && section=='A'){
+                            if (count%6==2 && section=='B'){
                                 x1 = atoi(token);
                                 printf("A1: %d ",x1);
                             }  
@@ -125,17 +127,17 @@ int main() {
                                 x4 = atoi(token);
                                 printf("A4: %d ",x4);
                                 printf("Average: %f",(float)(x1+x2+x3+x4)/4);
+                                printf("\n");
                             } 
                         }
                     }
-                    token = strtok(NULL,",");  
+                    token = strtok(NULL,",\n");  
                     count++;                                                                                                                                                                                                                                                                                            
                 }
-                if(section=='B')
-                printf("\n");
+                
             }
-            fclose(filePointer) ;     
-        } 
+            close(filePointer) ;     
+        }
         printf("\n\nCompleted the parent process\n\n");
         
     }
