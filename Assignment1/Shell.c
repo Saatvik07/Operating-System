@@ -85,7 +85,7 @@
                 pid_t pid = fork();
                 if(pid==0){
                     if(flag!=NULL){
-                        char *args[] = {"lsSelf",flag,arguments[0],NULL};
+                        char *args[] = {"lsSelf",flag,arguments[0],arguments[1],arguments[2],NULL};
                         execvp(args[0],args);
                     }
                     else{

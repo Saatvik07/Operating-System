@@ -494,3 +494,26 @@ exit
 cat
 cat ls.c -E
 exit
+ls
+exit
+ls
+ls -i
+ls -a
+exit
+ls
+ls -a
+ls -i
+ls -i -a
+ls -i sub
+ls -a sub
+ls -i -a sub
+exit
+ls sub
+ls -i -a sub
+ls -i -a
+exit
+ls sub
+ls -a sub
+ls -i sub
+ls -i -a sub
+exit

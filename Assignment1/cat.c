@@ -27,7 +27,7 @@ int main(int argc,char **argv) {
                         {
                             printf("%s",buffer);
                         }
-                        fcelose(filePointer) ;     
+                        fclose(filePointer) ;     
                     } 
             }
         }
@@ -69,7 +69,7 @@ int main(int argc,char **argv) {
                         fclose(filePointer) ;     
                     } 
             }
-            else if ((char)argv[1][0]!="-"){
+            else if ((char)argv[1][0]!='-'){
                 filePointer = fopen(argv[1], "r") ; 
                 if ( filePointer == NULL ) 
                     { 
