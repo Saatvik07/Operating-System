@@ -517,3 +517,34 @@ ls -a sub
 ls -i sub
 ls -i -a sub
 exit
+rm Test.txt
+exit
+rm test.txt
+rm Test.txt
+exit
+rm test.txt
+rm Test.txt
+rm -d sub
+exit
+rm -d sub
+exit
+rm -d -i -v sub
+exit
+rm -i -d -v sub
+rm -d sub
+rm -i -v a.txt
+exit
+rm -i a.txt
+rm -i -v b.txt
+rm b.txt
+rm -d sub
+rm -v a.txt
+exit
+rm -d -i -v sub
+rm -d -i sub
+exit
+rm -i -v sub
+rm -i -v -d sub
+exit
+rm -i -v -d sub
+exit

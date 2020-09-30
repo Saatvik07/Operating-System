@@ -163,7 +163,7 @@ int main(int argc, char **argv){
         }
     }
     else if (argc==4){
-        if(strcmp(argv[1],"-i")==0 && strcmp(argv[1],"-a")==0 || strcmp(argv[2],"-i")!=0 && strcmp(argv[1],"-a")!=0){
+        if(strcmp(argv[1],"-i")==0 && strcmp(argv[2],"-a")==0 || strcmp(argv[2],"-i")!=0 && strcmp(argv[1],"-a")!=0){
             if(chdir(argv[3])!=0){
                 perror("ls");
             }

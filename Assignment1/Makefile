@@ -15,8 +15,13 @@ compileDate:
 	gcc -o dateSelf date.c
 	sudo mv dateSelf ../../../../usr/bin
 
+compileRemove:
+	gcc -o rmSelf rm.c
+	sudo mv rmSelf ../../../../usr/bin
+
 compileAll:
 	make compileLs
 	make compileCat
 	make compileDate
+	make compileRemove
 	make compileShell

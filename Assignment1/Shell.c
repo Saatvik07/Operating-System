@@ -141,6 +141,23 @@
                     }
                 
             }
+            else if (strcmp(command,"rm")==0){
+                    pid_t pid = fork();
+                    if(pid==0){
+                        if(flag!=NULL){
+                                char *args[] = {"rmSelf",flag,arguments[0],arguments[1],arguments[2],NULL};
+                                execvp(args[0],args);
+                        }
+                        else{
+                            char *args[] = {"rmSelf",arguments[0],NULL};
+                            execvp(args[0],args);
+                        }
+                    }
+                    else if (pid>0){
+                        wait(pid,0);
+                    }
+                
+            }
             else if (strcmp(command,"exit")==0){
                 break;
             }
