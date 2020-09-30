@@ -22,7 +22,7 @@ int main() {
         fileDesc = open("Test.csv", O_RDONLY) ; 
         if (fileDesc==-1 ) 
         { 
-            printf( "Test.csv file failed to open." ) ; 
+            printf( "File failed to open." ) ; 
         } 
         else
         { 
@@ -86,11 +86,11 @@ int main() {
         int id,fileDesc;
         int x1,x2,x3,x4,x5;
         fileDesc = open("Test.csv", O_RDONLY) ; 
-        if ( filePointer == NULL ) 
+        if ( fileDesc == -1 ) 
         { 
-            printf( "Test.c file failed to open." ) ; 
+            printf( "File failed to open." ) ; 
         } 
-                else
+        else
         { 
             int count=0;
             while(read(fileDesc,buffer,sizeof(buffer)) != 0) 
@@ -136,7 +136,7 @@ int main() {
                 }
                 
             }
-            close(filePointer) ;     
+            close(fileDesc) ;     
         }
         printf("\n\nCompleted the parent process\n\n");
         
