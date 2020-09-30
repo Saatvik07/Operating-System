@@ -597,3 +597,16 @@ exit
 rm -d -v
 mkdir -p -v d/e/f/g
 exit
+ls
+cd a
+exit
+ls
+exit
+ls
+ls -i -a a
+rm a
+exit
+exit
+exit
+exit
+exit

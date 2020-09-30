@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<limits.h>
 #include<string.h>
-#include<time.h>
 #include<unistd.h>
+#include <sys/wait.h>
  int main(){
-    printf("Welcome User\n");
+    printf("\033[1;33mWelcome User\n\033[0m");
     FILE *filePointer, *filePointerRead;
     char input[256];
     char ch;
@@ -18,10 +18,10 @@
             printf("shellHistory canot be opened\n");
             break;
         }
-        else{
-            printf("$ ");
+        else{ 
+            printf("\033[1;32m%s\033[0m $ ",getcwd(cwd,sizeof(cwd)));
             gets(input);
-             fputs(input,filePointer);
+            fputs(input,filePointer);
             fputs("\n",filePointer);
             fclose(filePointer);
             char *command,*token, *flag=NULL;
@@ -94,7 +94,7 @@
                     }
                 }
                 else if (pid>0){
-                    wait(pid,0);
+                    wait(pid);
                 }
             }
             else if (strcmp(command,"cat")==0){
@@ -110,7 +110,7 @@
                         }
                     }
                     else if (pid>0){
-                        wait(pid,0);
+                        wait(pid);
                     }
                 else{
                     printf("insufficient arguments\n");
@@ -137,7 +137,7 @@
                         }
                     }
                     else if (pid>0){
-                        wait(pid,0);
+                        wait(pid);
                     }
                 
             }
@@ -154,7 +154,7 @@
                         }
                     }
                     else if (pid>0){
-                        wait(pid,0);
+                        wait(pid);
                     }
                 
             }
@@ -171,7 +171,7 @@
                         }
                     }
                     else if (pid>0){
-                        wait(pid,0);
+                        wait(pid);
                     }
                 
             }
