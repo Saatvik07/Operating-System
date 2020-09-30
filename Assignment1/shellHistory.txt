@@ -1,0 +1,496 @@
+pwd
+pwd
+pwd
+history
+exit
+exit
+pwd
+exit
+pwd
+pwd
+exit
+pwd
+exit
+pwd
+pwd
+history
+exit
+history
+exit
+pwd
+echo -e Saatvik \n Bhatnagar
+pwd
+echo -e Saatvik
+pwd
+echo -e Saatvik
+pwd
+exit
+pwd
+echo -e Saatvik
+echo -e Saatvik
+echo -e Saatvik Bhatnagar
+pwd
+echo -e Saatvik
+exit
+echo -e Saatvik \n Bhatnagar
+exit
+echo -e "Saatvik \n Bhatnagar"
+pwd
+exit
+echo -e Saatvik Bhatnagar
+exit
+echo -e "Saatvik \t Bhatnagar"
+exit
+echo -e Saatvik
+echo -e "Saatvik Bhatnagar"
+echo -e "Saatvik \t Bhatnagar"
+exit
+echo -e "Saatvik \t Bhatnagar"
+echo "Saatvik \t Bhatnagar"
+echo -e \t
+exit
+pwd
+pwd
+echo -e "Saatvik \t Bhatnagar"
+echo -e Saatvik
+echo Saatvik Bhatnagar
+echo -e Saatvik Bhatnagar
+echo Saatvik Bhatnagar
+echo Saatvik
+echo Saatvik
+echo Saatvik Bhatnagar wdfsdfgv sgsvg ffsdvsdv
+echo Ssaatvik Bhatnagar
+echo Saatvik Bhatngar
+echo -e "Saatvik Bhatnagar"
+exit
+cd ..
+pwd
+cd ..
+cd ..
+cd ../..
+pwd
+history
+exit
+pwd
+cd ..
+pwd
+cd ..
+pwd
+echo "Saatvik Bhatnagar"
+exit
+pwd
+cd ..
+pwd
+ls
+ls
+ls
+pwd
+ls
+cd ..
+history
+exit
+ls
+
+exit
+pwd
+ls
+history
+ls file1
+ls -l file1
+exit
+ls
+exit
+ls
+exit
+ls
+exit
+ls -l 
+exit
+exit
+ls
+exit
+ls
+exit
+ls
+cd ..
+ls -l Assignment1
+exit
+ls -l anything
+exit
+ls -l anything
+exit
+ls -l
+exit
+ls -l
+exit
+ls -l 
+exit
+ls -l
+exit
+ls
+exit
+ls -r
+ls
+exit
+ls -l
+ls -r
+exit
+ls -l
+ls -r
+cd ..
+pwd
+ls -l
+exit
+ls
+pwd
+ls -l
+ls Something
+exit
+ls -l
+ls -l Something
+cd ..
+ls -l
+ls -l sub
+exit
+ls -l
+ls -r
+exit
+ls -r
+ls -l
+ls -l sub
+ls -r
+ls sub
+exit
+ls sub
+exit
+ls
+ls -l
+ls sub
+pwd
+ls -l sub
+ls -r sub
+pwd
+exit
+cd ..
+pwd
+cd ..
+pwd
+ls -l sub
+ls -r
+pwd
+ls -r
+ls -l
+pwd
+cd sub
+ls
+ls -l
+exit
+ls
+pwd
+ls -l sub
+pwd
+ls sub
+pwd
+ls
+pwd
+cd sub
+ls
+pwd
+ls -l
+ls 
+pwd
+history
+exit
+ls
+pwd
+ls -l 
+cd sub
+cd sub
+ls
+ls
+ls
+ls sub
+ls -l sub
+pwd
+exit
+cat ls.c cat.c
+exit
+cat ls.c cat.c
+exit
+cat ls.c cat.c
+exit
+cat ls.c cat.c
+exit
+cat ls.c cat.c
+exit
+cat ls.c cat.c
+exit
+cd sub
+cd sub
+cd sub
+cd sub
+cd su b
+cd sub
+cd sub
+cd sub
+cd sub
+cd sub
+cd sub
+cd sub
+cd sub
+cd sub
+ls -l
+ls -a
+cd ..
+cat ls.c cat.c
+cat -n ls.c cat.c
+exit
+ls
+pwd
+exit
+exit
+cd sub 
+cd sub
+pwd
+ls
+ls -l
+exit
+exit
+exit
+ls -l
+exit
+ls -l
+ls
+exit
+ls
+ls -l
+pwd
+cd sub
+exit
+ls
+ls -l
+cd sub
+ls -l
+cs sub
+cd sub
+cd sub
+exit
+ls
+ls -l
+exit
+ls -l
+ls 
+cd sub
+ls -l
+ls -r
+exit
+ls -r
+ls
+exit
+ls
+ls -i
+exit
+ls
+ls
+ls
+ls
+exit
+ls
+exit
+ls
+exit
+ls
+exit
+ls
+ls -l
+exit
+ls -i
+ls
+exit
+ls
+exit
+exit
+ls
+exit
+ls
+exit
+ls
+ls -l
+exit
+ls
+exit
+ls
+exit
+ls
+exit
+ls
+exit
+cat ls.c cat.c
+exit
+cat ls.c cat.c
+cat -E ls.c cat.c
+exit
+cat -E ls.c cat.c
+cat -n ls.c cat.c
+ls -r
+exit
+ls
+exit
+cat -E ls.c cat.c
+cat ls.c cat.c
+cat -n ls.c cat.c
+exit
+cat -E ls.c cat.c
+exit
+cat -E ls.c cat.c
+exit
+ls
+exit
+ls
+exit
+ls
+exit
+ls
+exit
+ls
+ls -l
+exit
+exit
+ls
+man cd
+exit
+ls -l
+exit
+ls -i
+exit
+ls -i
+exit
+ls -i
+exit
+ls -i -a
+exit
+ls -i -a
+exit
+ls -i -a
+ls -i -a sub
+cd sub
+pwd
+ls -i -a
+ls
+ls -i
+ls -a
+exit
+ls
+ls -i
+ls -a
+ls -i -a
+exit
+ls -i
+exit
+ls -i
+exit
+ls -t
+exit
+ls -t
+ls -i
+ls -a
+ls -i -a
+pwd
+ls -i sub
+ls -a sub
+exit
+ls -a sub
+exit
+exit
+date -u
+exit
+date -u
+exit
+date -u
+exit
+date -u
+exit
+date -u
+exit
+date -u
+exit
+date -u
+exit
+date -u
+date
+exit
+date
+date -u
+date
+exit
+date
+date -u
+date
+date -u
+exit
+date
+exit
+date
+date -u
+exit
+date
+date -u
+exit
+date -r Shell.c
+exit
+date -r Shell.c
+exit
+date -r Shell.c
+exit
+date -r Shell.c
+exit
+date -r ls.c
+exit
+date -R
+exit
+date -R
+exit
+date -u -R
+date
+date -U
+date -u
+date -R
+exit
+date
+date -u
+date -R
+date -u -R
+exit
+date
+date -u
+date -R
+exit
+date -u
+date -R
+date -u -R
+exit
+date
+date -u
+date -R
+date -R -u
+exit
+date 
+date -u
+date -R
+date -u -R
+exit
+cat ls.c
+exit
+cat ls.c
+ls -E ls.c
+cat -E ls.c
+cat -n -E ls.c
+cat ls.c date.c
+cat -E ls.c date.c
+cat -n ls.c date.c
+cat -n -E ls.c date.c
+cat ls.c
+exit
+cat
+cat ls.c -E
+exit

@@ -69,7 +69,7 @@ int main() {
                 printf("\n");
             }
             fclose(filePointer) ;     
-        } 
+        }
         
         printf("\n\n\nCompleted the child process\n\n\n");
         exit(0);
