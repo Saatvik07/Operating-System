@@ -5,7 +5,7 @@
 #include <sys/wait.h>
  int main(){
     printf("\033[1;33mWelcome User\n\033[0m");
-    FILE *filePointer, *filePointerRead;
+    FILE *filePointer, *filePointerRead, *filePointerWrite;
     char input[256];
     char ch;
     char args[32][32];
@@ -60,13 +60,50 @@
                 }
             }
             else if (strcmp(command,"history")==0){
-                filePointerRead = fopen("shellHistory.txt","r");
+                
                 char buffer[256];
-                int i=1;
-                while(fgets(buffer,sizeof(buffer),filePointerRead)!=NULL){
-                    printf("%d %s",i,buffer);
-                    i++;
+                int i=1,j=0;
+                if(flag!=NULL){
+                    if(strcmp(flag,"-clear")==0){
+                        filePointerWrite = fopen("shellHistory.txt","w");
+                        fclose(filePointerRead);
+                    }
+                    else{
+                        printf("Bad arguments\n");
+                    }
+                    
                 }
+                else{
+                    if(arguments[0]==NULL){
+                        filePointerRead = fopen("shellHistory.txt","r");
+                        while(fgets(buffer,sizeof(buffer),filePointerRead)!=NULL){
+                            printf("%d %s",i,buffer);
+                                i++;
+                            }
+                        fclose(filePointerRead);
+                    }
+                    
+                    else{
+                            int num = atoi(arguments[0]);
+                            filePointerRead = fopen("shellHistory.txt","r");
+                            while(fgets(buffer,sizeof(buffer),filePointerRead)!=NULL){
+                                j++;
+                            }
+                            fclose(filePointerRead);
+                            filePointerRead = fopen("shellHistory.txt","r");
+                            int k=0;
+                            while(fgets(buffer,sizeof(buffer),filePointerRead)!=NULL){
+                                if(k>=j-num){
+                                    printf("%d %s",k,buffer);
+                                }
+                                k++;
+                            }
+                            fclose(filePointerRead);
+
+                            
+                        }
+                    }
+
             }
             else if (strcmp(command,"echo")==0){
                  int i=0;
