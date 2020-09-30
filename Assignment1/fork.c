@@ -80,7 +80,7 @@ int main() {
         printf("Beggining the parent process\n");
         waitpid(pid,0);
         FILE *filePointer ; 
-        char buffer[256];
+        char buffer1[65365];
         char dataToBeRead; 
         char section;
         int id,fileDesc;
@@ -93,10 +93,10 @@ int main() {
         else
         { 
             int count=0;
-            while(read(fileDesc,buffer,sizeof(buffer)) != 0) 
+            while(read(fileDesc,buffer1,sizeof(buffer1)) != 0) 
             {
                 char *token;
-                token = strtok(buffer,",\n");
+                token = strtok(buffer1,",\n");
                 while(token!=NULL){
                     if(count>=6){
                         if(count%6==0){
