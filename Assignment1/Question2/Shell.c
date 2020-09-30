@@ -107,11 +107,17 @@
             }
             else if (strcmp(command,"echo")==0){
                  int i=0;
-                      while(arguments[i]!=NULL){
+                 if(strcmp(flag,"-E")==0 || flag==NULL){
+                     while(arguments[i]!=NULL){
                           printf("%s ",arguments[i]);      
                           i++;
                       }
                       printf("\n");
+                 }
+                 else{
+                     printf("Bad arguments\n");
+                 }
+                      
             }
             else if (strcmp(command,"cd")==0){
                 if(chdir(arguments[0])!=0){

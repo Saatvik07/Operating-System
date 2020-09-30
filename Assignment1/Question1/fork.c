@@ -6,12 +6,12 @@
 int main() {
     pid_t pid = fork();
     if (pid < 0) {
-        printf("Fork failed!\n");
+        char str[] = "Fork failed.";
+        write(STDOUT_FILENO,str,strlen(str));
         exit(-1);
     }
 
     else if (pid == 0) {
-        printf("Beginning child process\n");
         FILE *filePointer ; 
         char buffer[65365];
         char dataToBeRead; 
@@ -22,7 +22,8 @@ int main() {
         fileDesc = open("Test.csv", O_RDONLY) ; 
         if (fileDesc==-1 ) 
         { 
-            printf( "File failed to open." ) ; 
+            char str[] = "File failed to open.";
+            write(STDOUT_FILENO,str,strlen(str));
         } 
         else
         { 
@@ -89,7 +90,8 @@ int main() {
         fileDesc = open("Test.csv", O_RDONLY) ; 
         if ( fileDesc == -1 ) 
         { 
-            printf( "File failed to open." ) ; 
+            char str[] = "File failed to open.";
+            write(STDOUT_FILENO,str,strlen(str));
         } 
         else
         { 

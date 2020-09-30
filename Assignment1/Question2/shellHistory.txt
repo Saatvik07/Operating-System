@@ -14,3 +14,8 @@ history 4
 exit
 history 6
 exit
+ls -i -a ..
+exit
+cd ~
+cd ~/..
+exit
