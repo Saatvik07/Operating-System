@@ -1,0 +1,49 @@
+pwd
+exit
+pwd
+exit
+pwd
+cd ../..
+cd Assignment1
+pwd
+cd Assginment1
+cd ..
+pwd
+cd ..
+pwd
+ls
+exit
+pwd
+ls
+history
+pwd
+cd Assignment1
+exit
+pwd
+ls
+ls -l Assignment1
+exit
+exit
+exit
+pwd
+ls Assignment1
+ls -l
+cd Assignment1
+exit
+exit
+pwd
+ls -l Something
+exit
+exit
+exit
+pwd
+ls
+ls Assignment1
+cd Assignment1
+pwd
+cd Assignment1
+exit
+exit
+pwd
+cd assignment
+cd Assignment1
