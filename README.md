@@ -1,4 +1,4 @@
-# Operating-System
+# Operating System (CSE231)
 
 ## This repository contains the code to all the assignments and quizzes that were assigned to me during the Operating System Course(CSE 231) in Monsoon 2020
 
