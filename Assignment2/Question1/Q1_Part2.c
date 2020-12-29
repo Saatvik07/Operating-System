@@ -1,9 +1,9 @@
+//Saatvik Bhatnagar 2019097
 #include <pthread.h> 
 #include <stdio.h> 
 #include <stdlib.h>
 int globalVariable = 10;
 void* child(void* args){
-    pthread_detach(pthread_self());
     while (globalVariable >-90)
     {
         globalVariable--;

@@ -1,7 +1,13 @@
-runFork:
-	gcc Q1_Part1.c -o Q1_Part1
-	./Q1_Part1
+compile1:
+	gcc Q1_part1.c -o Q1_part1
 
-runThread:
-	gcc -pthread Q1_Part2.c -o Q1_Part2
-	./Q1_Part2
+run1: 
+	make compile1
+	./Q1_part1
+
+compile2:
+	gcc -pthread Q1_part2.c -o Q1_part2
+
+run2:
+	make compile2
+	./Q1_part2

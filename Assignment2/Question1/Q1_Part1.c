@@ -1,5 +1,7 @@
+//Saatvik Bhatnagar 2019097
 #include<unistd.h>
 #include<stdio.h>
+#include<stdlib.h>
 int main(){
     int globalVar = 10;
     pid_t childPID = fork();
@@ -14,14 +16,14 @@ int main(){
              printf("%d\n",globalVar);
         }
         printf("Printing from inside the child process: %d\n",globalVar);
+        exit(0);
     }
     else{
-        int wstatus;
-        waitpid(childPID,&wstatus,0);
         while(globalVar<100){
             globalVar++;
              printf("%d\n",globalVar);
         }
         printf("Printing from inside the parent process: %d\n",globalVar);
+        return 0;
     }
 }
